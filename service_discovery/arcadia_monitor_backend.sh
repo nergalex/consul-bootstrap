@@ -1,6 +1,8 @@
+#!/bin/bash
+cat << EOF > /etc/consul.d/arcadia_monitor_backend.json
 {
   "service": {
-    "name": "arcadia-backend",
+    "name": "${EXTRA_APP_NAME}-arcadia-backend",
     "tags": ["v1.0.0"],
     "port": 84,
     "checks": [
@@ -14,3 +16,10 @@
     ]
   }
 }
+EOF
+
+
+
+
+
+

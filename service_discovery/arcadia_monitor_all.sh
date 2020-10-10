@@ -1,6 +1,8 @@
+#!/bin/bash
+cat << EOF > /etc/consul.d/arcadia_monitor_all.json
 {
   "service": {
-    "name": "arcadia-monitor-all",
+    "name": "${EXTRA_APP_NAME}-arcadia-monitor-all",
     "port": 81,
     "checks": [
       {
@@ -34,3 +36,9 @@
     ]
   }
 }
+EOF
+
+
+
+
+

@@ -66,4 +66,13 @@ auto_encrypt = {
 enable_local_script_checks = true
 EOF
 
+#Enable the service
+sudo systemctl enable consul
+
+
+
+
+
+
+
 
