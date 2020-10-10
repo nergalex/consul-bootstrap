@@ -2,7 +2,7 @@
 
 #Get IP
 LOCAL_IPV4=$(ifconfig eth0 | grep -E -o "([0-9]{1,3}[\\.]){3}[0-9]{1,3}"  | head -n 1)
-echo ${EXTRA_CONSUL_VERSION}
+echo EXTRA_CONSUL_VERSION: ${EXTRA_CONSUL_VERSION}
 
 #Utils
 sudo yum install -y unzip
