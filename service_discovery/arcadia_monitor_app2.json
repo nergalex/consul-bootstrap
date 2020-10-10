@@ -6,7 +6,7 @@
       {
         "id": "app2",
         "name": "nginx TCP Check",
-        "tcp": "${LOCAL_IPV4}:82",
+        "tcp": "localhost:82",
         "interval": "10s",
         "timeout": "1s"
       }

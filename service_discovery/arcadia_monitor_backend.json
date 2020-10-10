@@ -6,7 +6,7 @@
       {
         "id": "backend",
         "name": "nginx TCP Check",
-        "tcp": "${LOCAL_IPV4}:84",
+        "tcp": "localhost:84",
         "interval": "10s",
         "timeout": "1s"
       }

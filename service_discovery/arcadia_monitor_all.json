@@ -6,28 +6,28 @@
       {
         "id": "main",
         "name": "nginx TCP Check",
-        "tcp": "${LOCAL_IPV4}:81",
+        "tcp": "localhost:81",
         "interval": "10s",
         "timeout": "1s"
       },
       {
         "id": "backend",
         "name": "nginx TCP Check",
-        "tcp": "${LOCAL_IPV4}:84",
+        "tcp": "localhost:84",
         "interval": "10s",
         "timeout": "1s"
       },
       {
         "id": "app2",
         "name": "nginx TCP Check",
-        "tcp": "${LOCAL_IPV4}:82",
+        "tcp": "localhost:82",
         "interval": "10s",
         "timeout": "1s"
       },
       {
         "id": "app3",
         "name": "nginx TCP Check",
-        "tcp": "${LOCAL_IPV4}:83",
+        "tcp": "localhost:83",
         "interval": "10s",
         "timeout": "1s"
       }
