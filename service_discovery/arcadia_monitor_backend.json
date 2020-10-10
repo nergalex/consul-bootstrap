@@ -1,6 +1,7 @@
 {
   "service": {
-    "name": "arcadia-monitor-backend",
+    "name": "arcadia-backend",
+    "tags": ["v1.0.0"],
     "port": 84,
     "checks": [
       {

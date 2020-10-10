@@ -1,6 +1,7 @@
 {
   "service": {
-    "name": "arcadia-monitor-all-in-one",
+    "name": "arcadia-all-in-one",
+    "tags": ["v1.0.0"],
     "port": 80,
     "checks": [
       {

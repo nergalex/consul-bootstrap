@@ -1,6 +1,7 @@
 {
   "service": {
-    "name": "arcadia-monitor-app3",
+    "name": "arcadia-app3",
+    "tags": ["v1.0.0"],
     "port": 83,
     "checks": [
       {

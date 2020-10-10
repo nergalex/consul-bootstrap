@@ -1,6 +1,7 @@
 {
   "service": {
-    "name": "arcadia-monitor-main",
+    "name": "arcadia-main",
+    "tags": ["v1.0.0"],
     "port": 81,
     "checks": [
       {
