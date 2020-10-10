@@ -3,6 +3,7 @@ cat << EOF > /etc/consul.d/arcadia_monitor_all.json
 {
   "service": {
     "name": "${EXTRA_APP_NAME}-arcadia-monitor-all",
+    "tags": ["v1.0.0"],
     "port": 81,
     "checks": [
       {
