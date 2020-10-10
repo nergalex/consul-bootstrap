@@ -63,6 +63,7 @@ ca_file = "/opt/consul/consul-agent-ca.pem"
 auto_encrypt = {
   tls = true
 }
+enable_local_script_checks = true
 EOF
 
 

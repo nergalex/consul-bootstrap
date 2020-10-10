@@ -1,0 +1,15 @@
+{
+  "service": {
+    "name": "arcadia-monitor-backend",
+    "port": 84,
+    "checks": [
+      {
+        "id": "backend",
+        "name": "nginx TCP Check",
+        "tcp": "${LOCAL_IPV4}:84",
+        "interval": "10s",
+        "timeout": "1s"
+      }
+    ]
+  }
+}

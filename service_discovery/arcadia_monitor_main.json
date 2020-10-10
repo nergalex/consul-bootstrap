@@ -1,0 +1,15 @@
+{
+  "service": {
+    "name": "arcadia-monitor-main",
+    "port": 81,
+    "checks": [
+      {
+        "id": "main",
+        "name": "nginx TCP Check",
+        "tcp": "${LOCAL_IPV4}:81",
+        "interval": "10s",
+        "timeout": "1s"
+      }
+    ]
+  }
+}

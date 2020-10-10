@@ -1,0 +1,15 @@
+{
+  "service": {
+    "name": "arcadia-monitor-app3",
+    "port": 83,
+    "checks": [
+      {
+        "id": "app3",
+        "name": "nginx TCP Check",
+        "tcp": "${LOCAL_IPV4}:83",
+        "interval": "10s",
+        "timeout": "1s"
+      }
+    ]
+  }
+}
