@@ -7,11 +7,10 @@ LOCAL_IPV4=$(ifconfig eth0 | grep -E -o "([0-9]{1,3}[\\.]){3}[0-9]{1,3}"  | head
 sudo yum install -y unzip
 
 #Download Consul
-CONSUL_VERSION="1.8.4"
-curl --silent --remote-name https://releases.hashicorp.com/consul/${CONSUL_VERSION}/consul_${CONSUL_VERSION}_linux_amd64.zip
+curl --silent --remote-name https://releases.hashicorp.com/consul/${EXTRA_CONSUL_VERSION}/consul_${EXTRA_CONSUL_VERSION}_linux_amd64.zip
 
 #Install Consul
-unzip consul_${CONSUL_VERSION}_linux_amd64.zip
+unzip consul_${EXTRA_CONSUL_VERSION}_linux_amd64.zip
 sudo chown root:root consul
 sudo mv consul /usr/local/bin/
 consul -autocomplete-install
