@@ -8,20 +8,12 @@ echo EXTRA_CONSUL_VERSION: ${EXTRA_CONSUL_VERSION}
 sudo yum install -y unzip
 
 #Download Consul
-wget https://releases.hashicorp.com/consul/${EXTRA_CONSUL_VERSION}/consul_${EXTRA_CONSUL_VERSION}_linux_amd64.zip
 sudo wget -P /root https://releases.hashicorp.com/consul/${EXTRA_CONSUL_VERSION}/consul_${EXTRA_CONSUL_VERSION}_linux_amd64.zip
 
 #Install Consul
-sudo cp /consul_${EXTRA_CONSUL_VERSION}_linux_amd64.zip /root
-echo ls -alr
-ls -alr
-echo pwd
-pwd
-echo sudo_pwd
-sudo pwd
-sudo unzip /root/consul_${EXTRA_CONSUL_VERSION}_linux_amd64.zip
-sudo chown root:root /root/consul
-sudo mv /root/consul /usr/local/bin/
+sudo unzip consul_${EXTRA_CONSUL_VERSION}_linux_amd64.zip
+sudo chown root:root consul
+sudo mv consul /usr/local/bin/
 consul -autocomplete-install
 complete -C /usr/local/bin/consul consul
 
