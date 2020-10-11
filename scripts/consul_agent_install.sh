@@ -12,6 +12,10 @@ wget https://releases.hashicorp.com/consul/${EXTRA_CONSUL_VERSION}/consul_${EXTR
 
 #Install Consul
 sudo cp `ls -r | head -1` /consul_${EXTRA_CONSUL_VERSION}_linux_amd64.zip /root
+echo pwd
+pwd
+echo sudo_pwd
+sudo pwd
 sudo unzip /root/consul_${EXTRA_CONSUL_VERSION}_linux_amd64.zip
 sudo chown root:root /root/consul
 sudo mv /root/consul /usr/local/bin/
