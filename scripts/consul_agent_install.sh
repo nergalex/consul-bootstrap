@@ -9,9 +9,12 @@ sudo yum install -y unzip
 
 #Download Consul
 wget https://releases.hashicorp.com/consul/${EXTRA_CONSUL_VERSION}/consul_${EXTRA_CONSUL_VERSION}_linux_amd64.zip
+sudo wget -P /root https://releases.hashicorp.com/consul/${EXTRA_CONSUL_VERSION}/consul_${EXTRA_CONSUL_VERSION}_linux_amd64.zip
 
 #Install Consul
 sudo cp /consul_${EXTRA_CONSUL_VERSION}_linux_amd64.zip /root
+echo ls -alr
+ls -alr
 echo pwd
 pwd
 echo sudo_pwd

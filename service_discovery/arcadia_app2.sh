@@ -1,15 +1,15 @@
 #!/bin/bash
-cat << EOF > /etc/consul.d/arcadia_monitor_backend.json
+cat << EOF > /etc/consul.d/arcadia_app2.json
 {
   "service": {
-    "name": "${EXTRA_APP_NAME}-arcadia-backend",
+    "name": "${EXTRA_APP_NAME}-arcadia-app2",
     "tags": ["v1.0.0"],
-    "port": 84,
+    "port": 82,
     "checks": [
       {
-        "id": "backend",
+        "id": "app2",
         "name": "nginx TCP Check",
-        "tcp": "localhost:84",
+        "tcp": "localhost:82",
         "interval": "10s",
         "timeout": "1s"
       }
@@ -17,9 +17,3 @@ cat << EOF > /etc/consul.d/arcadia_monitor_backend.json
   }
 }
 EOF
-
-
-
-
-
-

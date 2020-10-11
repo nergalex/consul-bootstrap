@@ -1,15 +1,15 @@
 #!/bin/bash
-cat << EOF > /etc/consul.d/arcadia_monitor_app2.json
+cat << EOF > /etc/consul.d/arcadia_all_in_one.json
 {
   "service": {
-    "name": "${EXTRA_APP_NAME}-arcadia-app3",
+    "name": "${EXTRA_APP_NAME}-arcadia-all-in-one",
     "tags": ["v1.0.0"],
-    "port": 83,
+    "port": 80,
     "checks": [
       {
-        "id": "app3",
+        "id": "main",
         "name": "nginx TCP Check",
-        "tcp": "localhost:83",
+        "tcp": "localhost:80",
         "interval": "10s",
         "timeout": "1s"
       }
@@ -17,9 +17,3 @@ cat << EOF > /etc/consul.d/arcadia_monitor_app2.json
   }
 }
 EOF
-
-
-
-
-
-
