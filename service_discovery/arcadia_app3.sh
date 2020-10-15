@@ -9,7 +9,7 @@ cat << EOF > /etc/consul.d/arcadia_app2.json
       {
         "id": "app3",
         "name": "nginx TCP Check",
-        "tcp": "localhost:83",
+        "tcp": "${LOCAL_IPV4}:83",
         "interval": "10s",
         "timeout": "1s"
       }

@@ -7,9 +7,9 @@ cat << EOF > /etc/consul.d/arcadia_all_in_one.json
     "port": 80,
     "checks": [
       {
-        "id": "main",
+        "id": "all",
         "name": "nginx TCP Check",
-        "tcp": "localhost:80",
+        "tcp": "${LOCAL_IPV4}:80",
         "interval": "10s",
         "timeout": "1s"
       }

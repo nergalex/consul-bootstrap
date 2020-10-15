@@ -9,7 +9,7 @@ cat << EOF > /etc/consul.d/arcadia_backend.json
       {
         "id": "backend",
         "name": "nginx TCP Check",
-        "tcp": "localhost:84",
+        "tcp": "${LOCAL_IPV4}:84",
         "interval": "10s",
         "timeout": "1s"
       }
